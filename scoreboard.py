@@ -24,7 +24,7 @@ class Scoreboard(turtle.Turtle):
         if self.score > self.high_score:
             self.high_score = self.score
             with open(file="high_score.txt", mode="w") as file:
-                file.write(str(self.high_score))
+                file.write(f"{self.high_score}")
 
         self.score = 0
         self.show_leaderboard()
